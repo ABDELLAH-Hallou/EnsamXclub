@@ -89,7 +89,7 @@
 .btn3 {
   font-family: "Ubuntu", sans-serif;
   background-color: white;
-  width: 20%;
+  width: 10% !important;
   color: #00022e;
   font-size: 1.2rem;
   border-radius: 30px;
@@ -503,3 +503,9 @@ fieldset[disabled] .form-control {
   font-size: 16px;
   font-weight: bold;
   color: #333; }
+
+/* office members */
+
+#office_members .post-content img{
+  height: 40rem !important;
+}
