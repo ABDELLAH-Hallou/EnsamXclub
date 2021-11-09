@@ -39,3 +39,8 @@
 .form-check input {
     color: #007bff
 }
+@media all and (max-width: 991px) {
+    .modal-footer .btn{
+        width: 25% !important;
+    }
+}
