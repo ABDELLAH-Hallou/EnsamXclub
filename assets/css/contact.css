@@ -1,3 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  background-color: #00022e !important;
+  padding: 1rem 1.2rem;
+}
+.navbar .container-fluid {
+  margin: 0 3rem;
+}
+.navbar .container-fluid .navbar-brand {
+  color: white !important;
+  transform: translateX(10%);
+  font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+}
+.navbar .container-fluid div .navbar-nav .nav-item {
+  padding: 0 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.navbar .container-fluid div .navbar-nav .nav-item a {
+  color: white !important;
+}
+.navbar .container-fluid div .btn1 {
+  font-family: "Ubuntu", sans-serif;
+  transform: translateX(50%);
+}
+
+.btn1 {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.btn1:hover {
+  background-color: white;
+  color: #00022e;
+  border-color: #00022e;
+}
+@media all and (max-width: 991px) {
+  .navbar .container-fluid {
+    margin: 0 0.5rem;
+  }
+}
+.btn1 {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.btn1:hover {
+  background-color: white;
+  color: #00022e;
+  border-color: #00022e;
+}
+
+.btn2 {
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  width: 30%;
+  color: #00022e;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 0.5px solid #00022e;
+  transition: all 0.5s;
+}
+.btn2:hover {
+  background-color: #00022e !important;
+  color: white;
+  border-color: white;
+}
+
+.btn3 {
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  width: 10% !important;
+  color: #00022e;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 0.5px solid #00022e;
+  transition: all 0.5s;
+
+
+}
+.btn3:hover {
+  background-color: #ff8800;
+  color: white;
+  border-color: white;
+}
 .navbar-light .navbar-toggler {
   color: rgb(255 255 255);
   border-color: rgb(255 255 255);
@@ -5,13 +103,24 @@
 a {
   text-decoration: none !important;
 }
+.card {
+  background-color: rgb(233, 233, 233) !important;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.521);
+  position: relative;
+  margin-top: 11rem;
+  margin-bottom: 2rem;
+  border-radius: 20px; 
+}
 .page-heading h1 {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 /* Send Message */
 .send-message {
   margin-top: 3rem;
+  margin-bottom: -5rem;
 }
 .contact-form input {
   font-size: 14px;
