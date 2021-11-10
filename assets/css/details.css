@@ -7,14 +7,14 @@
 
 
 .navbar {
-  background-color: #00022e;
+  background-color: #00022e !important;
   padding: 1rem 1.2rem;
 }
 .navbar .container-fluid {
   margin: 0 3rem;
 }
 .navbar .container-fluid .navbar-brand {
-  color: white;
+  color: white !important;
   transform: translateX(10%);
   font-size: 2rem;
   font-family: "Fredoka One", cursive;
@@ -26,7 +26,7 @@
   font-weight: 400;
 }
 .navbar .container-fluid div .navbar-nav .nav-item a {
-  color: white;
+  color: white !important;
 }
 .navbar .container-fluid div .btn1 {
   font-family: "Ubuntu", sans-serif;
@@ -252,6 +252,10 @@ section.content
   margin-top: 10px;
   color: #999;
   font-size: 13px; 
+}
+.card-about-me .body ul li .vision{
+  text-align: justify;
+  text-justify: inter-word;
 }
 /*bg*/
 .bg-red, .bg-blue, .bg-amber, .bg-teal{

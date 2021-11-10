@@ -1,0 +1,141 @@
+{% extends "blog/base_2.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'blog/profile.css' %}"> {% endblock %}
+{% block content %}
+
+    <section class="profile">
+        <div class="container-fluid">
+            <div class="prof">
+                <img class="img-fluid rounded-circle account-img" src="{{ user.profile.image.url }}" alt="user-image">
+                <div class="media-body">
+                    <div style="display: flex;flex-direction: row;"><h2 class="display-4 ">{{ user.first_name }} {{ user.last_name }} </h2>
+                     <a style="margin-left: 20px;" href="{% url 'profile_update' %}"><img style=" height: 25px;width: 25px; margin-top: 25px;" alt="icon" src="{% static 'blog/images/edit.png' %}"/> </a></div>
+                    <p class="text-secondary">  {{ user.email }}  </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="container contain">
+        <h3 style="text-align: center">About Me </h3>
+        <p style=" text-align:center;font-size: 1.5rem" class="description"> {{ user.profile.aboutme }} </p>
+
+
+    </section>
+<div>
+    <section class="tab container-fluid">
+        <button class="tablinks" onclick="openCity(event, 'PF')" id="defaultOpen">Personal Info</button>
+        <button class="tablinks" onclick="openCity(event, 'Course')">Enrolled Courses</button>
+    </section>
+
+    <section id="PF" class="tabcontent personal_info">
+        <div class="row pair">
+            <div class=" label col-3"> First Name <span> : </span></div>
+            <div class="input col-5"> {{ user.first_name }}</div>
+        </div>
+        <div class="row unpair">
+            <div class=" label col-3"> Last Name <span> : </span></div>
+            <div class="input col-6"> {{ user.last_name }}</div>
+        </div>
+        <div class="row pair">
+            <div class="label col-3"> Email <span > : </span></div>
+            <div class="input col-6"> {{ user.email }} </div>
+        </div>
+        <div class="row unpair">
+
+            <div class="label col-3"> joined<span > : </span></div>
+            <div class="input col-6"> {{ user.date_joined }} </div>
+
+        </div>
+
+        <div class="row pair">
+            <div class=" label col-3"> Address <span> : </span></div>
+            <div class=" input col-6"> {{ user.profile.address }}</div>
+        </div>
+        <div class="row unpair">
+            <div class=" label col-3"> Gender <span> : </span></div>
+            <div class="input col-5"> {{ user.profile.gender }}</div>
+        </div>
+        <div class="row pair">
+            <div class=" label col-3"> Telephone <span> : </span></div>
+            <div class=" input col-6"> {{ user.profile.telephone }}</div>
+        </div>
+    </section>
+
+    <section id="Course" class="tabcontent Courses container">
+
+        {% for course in courses %}
+            <article class="Course row container-fluid">
+
+                <div class="part-1 col-4">
+                    <a href="{% url 'course-detail' course.idCours.id %}"><img src=" {{ course.idCours.image.url }}"
+                                                                         alt="course"></a>
+                </div>
+                <div class="part-2 col-8">
+                    <div class="description">
+                        <h4>
+                            <a href="{% url 'course-detail' course.idCours.id %}"> {{ course.idCours.title }} </a>
+                        </h4>
+                        <p class="course-description">
+                            {{ course.idCours.description }}
+                        </p>
+                        <p class="text-secondary">
+                            {{ course.idCours.instructor.user.first_name }} {{ course.idCours.instructor.user.last_name }}
+                        </p>
+                        <h6>
+                            {{ course.idCours.level }}
+                        </h6>
+                        <p class="text-secondary">
+                            {{ course.idCours.creationDate }}
+                        </p>
+
+                    </div>
+                    <div class="price">
+                        <p> acquired</p>
+                    </div>
+                </div>
+
+            </article>
+        {% endfor %}
+    </section>
+
+
+    <script>
+        function openCity(evt, cityName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+
+{% endblock content %}
+
+
+<div class="container">
+    <form class="profile-form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Profile Info</legend>
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn2" type="submit">Update</button>
+        </div>
+    </form>
+</div>

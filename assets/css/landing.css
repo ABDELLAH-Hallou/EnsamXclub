@@ -239,6 +239,7 @@
     text-align: center;
   }
   .main .container .row {
+    margin-top: 3rem;
     transform: translateY(-20%);
   }
   .main .container .row .col1 {
@@ -263,6 +264,7 @@
 
   .segments .container .row .col {
     transform: scale(0.8);
+    margin-bottom: -3rem;
   }
   .laptop {
     height: 40rem;

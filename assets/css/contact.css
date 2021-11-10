@@ -1,0 +1,70 @@
+.navbar-light .navbar-toggler {
+  color: rgb(255 255 255);
+  border-color: rgb(255 255 255);
+}
+a {
+  text-decoration: none !important;
+}
+.page-heading h1 {
+  text-align: center;
+  margin-top: 7rem;
+}
+/* Send Message */
+.send-message {
+  margin-top: 3rem;
+}
+.contact-form input {
+  font-size: 14px;
+  width: 100%;
+  height: 44px;
+  display: inline-block;
+  line-height: 42px;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  margin-bottom: 30px;
+}
+
+.contact-form input:focus {
+  box-shadow: none;
+}
+.contact-form fieldset:focus-within > .labels {
+  margin-top: -1.5rem;
+}
+
+.contact-form textarea {
+  font-size: 14px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 120px;
+  height: 120px;
+  max-height: 180px;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  margin-bottom: 30px;
+}
+.contact-form .labels{
+  z-index: 9999;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-form textarea:focus {
+  box-shadow: none;
+}
+
+.contact-form .btn {
+  background-color: transparent;
+  float: right !important;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+  .page-heading .text-content h4 {
+    font-size: 22px;
+  }
+  .send-message .accordion {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+}
