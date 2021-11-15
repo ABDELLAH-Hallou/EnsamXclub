@@ -3,8 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
+.navbar-light .navbar-toggler {
+  color: rgb(255 255 255);
+  border-color: rgb(255 255 255);
+}
 .navbar {
   padding: 1rem 1.2rem;
 }
