@@ -4,33 +4,6 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-.navbar {
-  background-color: #00022e !important;
-  padding: 1rem 1.2rem;
-}
-.navbar .container-fluid {
-  margin: 0 3rem;
-}
-.navbar .container-fluid .navbar-brand {
-  color: white !important;
-  transform: translateX(10%);
-  font-size: 2rem;
-  font-family: "Fredoka One", cursive;
-}
-.navbar .container-fluid div .navbar-nav .nav-item {
-  padding: 0 1.5rem;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.navbar .container-fluid div .navbar-nav .nav-item a {
-  color: white !important;
-}
-.navbar .container-fluid div .btn1 {
-  font-family: "Ubuntu", sans-serif;
-  transform: translateX(50%);
-}
-
 .btn1 {
   font-family: "Ubuntu", sans-serif;
   color: white;
@@ -44,41 +17,21 @@
   color: #00022e;
   border-color: #00022e;
 }
-@media all and (max-width: 991px) {
-  .navbar .container-fluid {
-    margin: 0 0.5rem;
-  }
-}
-.btn1 {
-  font-family: "Ubuntu", sans-serif;
-  color: white;
-  font-size: 1.2rem;
-  border: 0.5px solid white;
-  border-radius: 30px;
-  transition: all 0.5s;
-}
-.btn1:hover {
-  background-color: white;
-  color: #00022e;
-  border-color: #00022e;
-}
-
 .btn2 {
   font-family: "Ubuntu", sans-serif;
-  background-color: white;
+  background: linear-gradient(to right, #00A8C6, #141835) !important;
   width: 30%;
-  color: #00022e;
+  color: #fff;
   font-size: 1.2rem;
   border-radius: 30px;
-  border: 0.5px solid #00022e;
+  /* border: 0.5px solid #00022e; */
   transition: all 0.5s;
 }
 .btn2:hover {
-  background-color: #00022e !important;
+  background: linear-gradient(to left, #00A8C6, #141835) !important;
   color: white;
-  border-color: white;
+  border-color: #00022e;
 }
-
 .btn3 {
   font-family: "Ubuntu", sans-serif;
   background-color: white;
@@ -88,8 +41,6 @@
   border-radius: 30px;
   border: 0.5px solid #00022e;
   transition: all 0.5s;
-
-
 }
 .btn3:hover {
   background-color: #ff8800;
@@ -103,77 +54,127 @@
 a {
   text-decoration: none !important;
 }
-.card {
-  background-color: rgb(233, 233, 233) !important;
-  width: 80%;
-  margin: auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.521);
+
+.main {
+  background-image: url(../../images/Ecus_Sleep-Gradient-Background.jpg);
+  background-size: cover;
+  height: max-content;
+  width: 100%;
   position: relative;
-  margin-top: 11rem;
-  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.main .custom-shape-divider-top-1613908015 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.main .custom-shape-divider-top-1613908015 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+  transform: rotateY(180deg);
+}
+.main .custom-shape-divider-top-1613908015 .shape-fill {
+  fill: #FFFFFF;
+}
+.card {
+  background-color: #fff !important;
+  width: 100%;
+  height:max-content;
+  margin: 5rem 0 5rem 0;
   border-radius: 20px; 
 }
-.page-heading h1 {
+.card h3 {
   text-align: center;
   margin-top: 2rem;
 }
-/* Send Message */
-.send-message {
-  margin-top: 3rem;
-  margin-bottom: -5rem;
+.card form
+{
+  margin: 2rem 2rem 0 2rem;
 }
-.contact-form input {
+.card form label {
+  display: block;
+  /* z-index: 9999;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 0.5rem; */
+}
+.card form input {
   font-size: 14px;
   width: 100%;
-  height: 44px;
+  height: 38px;
   display: inline-block;
   line-height: 42px;
-  border: 1px solid #eee;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 }
-
-.contact-form input:focus {
+.card form input:focus {
   box-shadow: none;
 }
-.contact-form fieldset:focus-within > .labels {
+/* .card form fieldset:focus-within > .labels {
   margin-top: -1.5rem;
+} */
+.card form fieldset:focus-within{
+  margin-top: -1rem;
 }
-
-.contact-form textarea {
+.card form textarea {
   font-size: 14px;
   width: 100%;
   min-width: 100%;
   min-height: 120px;
   height: 120px;
-  max-height: 180px;
-  border: 1px solid #eee;
+  max-height: 210px;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 }
-.contact-form .labels{
-  z-index: 9999;
-  position: absolute;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-}
-
-.contact-form textarea:focus {
+.card form textarea:focus {
   box-shadow: none;
 }
-
-.contact-form .btn {
+.card form .btn {
   background-color: transparent;
   float: right !important;
 }
 
-/* Responsive Style */
+.main .col-lg-4 img{
+  margin-left: -3rem;
+}
+.main .custom-shape-divider-bottom-1613919420 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.main .custom-shape-divider-bottom-1613919420 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 70px;
+}
+.main .custom-shape-divider-bottom-1613919420 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
 @media (max-width: 768px) {
-  .page-heading .text-content h4 {
-    font-size: 22px;
+  /* .main {
+    height: 55rem;
+  } */
+  .card {
+    margin: 5rem 0 5rem 0;
   }
-  .send-message .accordion {
-    margin-top: 30px;
-    margin-left: 0px;
+  .card h3 {
+    margin-top: 1rem;
+  }
+  .card form
+  {
+    margin: 1rem 2rem 0 2rem;
   }
 }
