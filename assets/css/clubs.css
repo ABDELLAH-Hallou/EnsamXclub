@@ -1,0 +1,23 @@
+.segments .container .row .col
+{
+	transform:scale(0.7)!important;
+}
+.segments .container
+{
+	margin-bottom: -85px!important;
+}
+.img-fluid {
+    height: 22rem !important;
+}
+.segments .container .row .col {
+	margin-bottom: -6rem;
+}
+@media all and (max-width: 991px) {
+	.segments{
+		margin-bottom: 3rem;
+	}
+	.segments .container .row .col {
+		transform: scale(0.8);
+		margin-bottom: -3rem;
+	}
+}

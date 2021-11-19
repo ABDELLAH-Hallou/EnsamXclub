@@ -1,10 +1,7 @@
 .main {
   background-image: url(../../images/Ecus_Sleep-Gradient-Background.jpg);
-  /* background-color: #07689f; */
-  /* background-color:#FF7556; */
   background-size: cover;
   height: 40rem;
-  width: 100vw;
   position: relative;
 }
 .main .custom-shape-divider-top-1613908015 {
