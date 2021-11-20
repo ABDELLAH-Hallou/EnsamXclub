@@ -1,0 +1,16 @@
+
+.card .body{
+    margin: 2rem 5rem 0 5rem;
+}
+.checkoutinfo{
+    float: right;
+    margin-right: 3rem;
+}
+@media all and (max-width: 991px){
+    .card .body{
+        margin: 2rem 0 0 0;
+    }
+    .checkoutinfo{
+        margin-right: 1rem;
+    }
+}
