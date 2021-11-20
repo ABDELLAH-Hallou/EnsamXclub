@@ -82,9 +82,13 @@
                     <div class="card">
                         <div class="body">
                             
-                            <h3>Check Out :</h3><div class="checkoutinfo">
-                            <p><strong>Club : </strong>ZERONES</p>
-                            <p><strong>Price : </strong>7$</p></div>
+                            <h3>Check Out :</h3>
+                            <div class="checkoutinfo">
+                                <p><strong>Club : </strong>ZERONES</p>
+                                <label class="labels" for="price"><strong>Amount</strong></label>
+                                <input name="price" type="number" value="7" class="form-control" id="price" required>
+                                <span><strong>$</strong></span>
+                            </div>
                             <div id="paypal-button-container"></div>
 
                             <!-- Include the PayPal JavaScript SDK -->
@@ -269,7 +273,7 @@
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: '88.44'
+                            value: document.getElementById("price").value
                         }
                     }]
                 });
