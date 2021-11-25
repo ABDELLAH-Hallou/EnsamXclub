@@ -13,20 +13,18 @@
 .header {
   color: white;
   background-color: #00022e;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  margin: 6rem 5rem 4rem 5rem;
+  width: max-content;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid lightgrey;
   padding: 1rem;
 }
 
 .header form {
-  margin-left: auto;
+  /* margin-left: auto; */
   position: relative;
-  width: 80%;
+  width: 100%;
   background: var(--color-brand);
   border-radius: var(--rad);
 }
