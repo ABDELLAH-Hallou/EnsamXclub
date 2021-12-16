@@ -1,0 +1,12 @@
+.post-body{
+    margin-left: 11% !important;
+    margin-right: 11% !important;
+}
+.post-body form h2{
+    text-align: center;
+}
+.post-body form button{
+    float: right;
+    width: max-content;
+    background-color: transparent ;
+}
