@@ -128,9 +128,13 @@ section.content
   margin-bottom: 30px;
   border-radius: 20px; 
 }
+.newPost{
+  /* float: right; */
+  width: 100%;
+  font-size: 15px;
+}
 
-
-/* Profile Page ================================ */
+/* Profile ================================ */
 .profile-card .profile-header 
 {
   background-color: #1e2e40;
@@ -278,7 +282,6 @@ section.content
   background-color: #FFC107 !important;
   color: #fff; 
 }
-/* General ===================================== */
 body {
   background-color: #e9e9e9;
   transition: all 0.5s;
@@ -290,7 +293,6 @@ h1,h2,h3,h4,h5,h6 {
 button,input,select,a {
   outline: none !important; 
 } 
-/* Nav Tabs ==================================== */
 
 .nav-tabs > li {
   position: relative;
@@ -308,7 +310,6 @@ button,input,select,a {
 }
 
 
-/*panel posts events*/
 .panel-post {
   border-radius: 0; 
 }

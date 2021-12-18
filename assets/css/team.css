@@ -9,7 +9,7 @@ body{
     
     font-family: sans-serif;
 }
-.title{
+/* .title{
     text-align: center;
     margin: 100px auto 50px;
     font-size: 30px;
@@ -19,7 +19,7 @@ body{
     font-size: 20px;
     margin-top: 10px;
     line-height: 24px;
-}
+} */
 .profile{
     width: 250px;
     height: 250px;
@@ -75,7 +75,7 @@ body{
     justify-content:center;
     flex-wrap: wrap;
     width: 85%;
-    margin: auto;
+    margin: 12rem auto 4rem auto;
 }
 .profile img:hover{
     width: 250px;
@@ -101,19 +101,21 @@ body{
 
 @media screen and (max-width: 670px){
     
-    .title{
+    /* .title{
         font-size: 20px;
     }
     .title p{
 
         font-size: 18px;
         line-height: 20px;
-    }
+    } */
 }
 
 @media screen and (max-width: 658px){
     .team-row{
-        margin-left: 20%;
+        margin-left: 10%;
     }
-
+    .profile{
+        margin:0 5rem 2rem 5rem;
+    }
 }
